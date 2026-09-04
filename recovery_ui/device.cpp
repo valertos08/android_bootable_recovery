@@ -50,6 +50,7 @@ static std::vector<menu_action_t> get_advanced_actions() {
   { "Reboot to bootloader", Device::REBOOT_BOOTLOADER },
   { "Reboot to recovery", Device::REBOOT_RECOVERY },
   { "Mount/unmount system", Device::MOUNT_SYSTEM },
+  { "File manager", Device::FILE_MANAGER },
   { "View recovery logs", Device::VIEW_RECOVERY_LOGS },
   { "Enable ADB", Device::ENABLE_ADB },
   { "Run graphics test", Device::RUN_GRAPHICS_TEST },

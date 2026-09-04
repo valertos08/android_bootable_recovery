@@ -45,6 +45,7 @@
 #include <ziparchive/zip_archive.h>
 
 #include "bootloader_message/bootloader_message.h"
+#include "file_manager.h"
 #include "install/adb_install.h"
 #include "install/fuse_install.h"
 #include "install/virtiofs_install.h"
@@ -667,6 +668,12 @@ change_menu:
             mounted = false;
           }
         }
+        break;
+      }
+
+      case Device::FILE_MANAGER: {
+        save_current_log = true;
+        RunFileManager(device);
         break;
       }
 

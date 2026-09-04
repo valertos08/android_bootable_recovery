@@ -134,6 +134,7 @@ cc_library_static {
 
     srcs: [
         "recovery.cpp",
+        "file_manager.cpp",
     ],
 
     shared_libs: [
@@ -167,7 +168,9 @@ cc_binary {
     shared_libs: [
         "android.hardware.health-V3-ndk", // from librecovery_utils
         "android.hardware.boot-V1-ndk",
+        "libpng",
         "librecovery_ui",
+        "libz",
     ],
 
     static_libs: [
